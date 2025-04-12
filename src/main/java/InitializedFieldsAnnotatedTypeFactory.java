@@ -1,10 +1,10 @@
 import org.checkerframework.framework.source.SourceChecker;
-import org.checkerframework.framework.type.AnnotatedTypeFactory;
 import org.checkerframework.framework.type.GenericAnnotatedTypeFactory;
 
 class InitializedFieldsAnnotatedTypeFactory {
 
-  private void defaultValueIsOK(Class<? extends SourceChecker> sourceCheckerClass,
+  private void triggerProblem(
+    Class<? extends SourceChecker> sourceCheckerClass,
      GenericAnnotatedTypeFactory<?,?,?,?> gatf,
      SourceChecker subchecker
    ) {
